@@ -22,5 +22,13 @@ function adicionarAmigo() {
 
 }
 
-
+function atualizarLista(){
+    let lista = document.getElementById("listaAmigos");
+    lista.innerHTML = "";
+    for (let i = 0; i < listaAmigos.length; i++){
+        let item = document.createElement("li");
+        item.textContent = listaAmigos[i];
+        lista.appendChild(item);
+    }
+}
 
